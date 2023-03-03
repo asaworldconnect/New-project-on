@@ -1,0 +1,1609 @@
+/* ............................. */
+/*       Reset                   */
+/* ............................. */
+
+/*  http://piccalil.li/blog/a-modern-css-reset/ */
+
+set up the body body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-dark));
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+/* make imags esier to work with */
+/* img,
+picture {
+  max-width: 100%;
+  display: block;
+} */
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1320;
+}
+
+/*   Reset margin     */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: century Gothic;
+}
+
+.xl {
+  display: flex;
+}
+
+.xl-sc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 0 2.5rem;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar ul {
+  display: flex;
+  margin-top: 22px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.62rem 1.87rem;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 0.62rem 1.87rem;
+  background: #22a75d;
+  box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+  color: #fff;
+  border-radius: 52px;
+}
+
+.btn-outline {
+  border: 2px solid #22a75d;
+  border-radius: 52px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* text design start her xl-text-family */
+
+.xl-text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.xl-text-1 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  /* or 112% */
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.xl-text-2 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #dde2ff;
+  opacity: 0.6;
+}
+
+.xl-text-3 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  /* identical to box height, or 112% */
+  color: #0f1320;
+  margin-bottom: 30px;
+}
+
+.xl-text-4 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  color: #0f1320;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.xl-text-5 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #0f1320;
+  opacity: 0.6;
+}
+.xl-text-6 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height, or 150% */
+  color: #f7f5f9;
+  text-align: center;
+}
+
+.xl-text-7 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  /* identical to box height, or 112% */
+  color: #ffffff;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+}
+
+.team-text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  /* or 189% */
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.team-text-1 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  /* or 189% */
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.text-light {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.text-accent {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+/* texts design here xl-text-family */
+
+.img {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+.radius-green,
+.radius-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 4.37rem;
+  width: 4.37rem;
+  margin-bottom: 22px;
+}
+
+/* background & colors */
+
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.bg-blue {
+  background: #2278d4;
+  box-shadow: 0px 15px 25px rgba(34, 120, 212, 0.25);
+}
+
+.bg-red {
+  background: #e20613;
+  box-shadow: 0px 15px 25px rgba(226, 6, 19, 0.25);
+}
+
+.bg-yellow {
+  background-color: #ffd100;
+  box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
+}
+
+.bg-green,
+.btn-green {
+  background: #22a75d;
+  box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+}
+
+.bg-tokner {
+  background: #171b29;
+  border-radius: 25px;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-green {
+  color: #22a75d;
+}
+
+.text-red {
+  color: #e20613;
+}
+
+.text-yellow {
+  color: #ffd100;
+}
+
+.text-blue {
+  color: #2278d4;
+}
+
+.text-normal {
+  color: #ffffff;
+
+  opacity: 0.16;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-align {
+  text-align: center;
+}
+
+/* background & colors Ends here */
+
+.share {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 10px; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 210px;
+}
+
+.goal {
+  display: flex;
+  justify-content: center;
+  margin: 0 33px 158px;
+}
+
+.card,
+.card-1 {
+  position: relative;
+  background: #171b29;
+  border-radius: 25px;
+  padding: 52px 68px;
+}
+
+.card-1 {
+  top: 100px;
+}
+
+.text-color-xl {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+}
+
+.text-color-xl-1 {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.text-footer {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  text-align: center;
+  color: #ffffff;
+}
+
+.image {
+  width: 100%;
+}
+
+.white {
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  padding-left: 20%;
+  border-top-left-radius: 400px;
+  padding-top: 20%;
+  padding-bottom: 23%;
+}
+
+.green-circle,
+.blue-circle,
+.yellow-circle,
+.red-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 73px;
+  box-shadow: 0px 15px 25px rgb(34 167 93 / 25%);
+  border-radius: 50%;
+  text-align: center;
+  color: #0f1320;
+  border-radius: 50% 50% 50% 10%;
+}
+
+.dot,
+.dot-blue,
+.dot-yellow,
+.dot-red {
+  width: 12px;
+  height: 12px;
+  box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+  border-radius: 50%;
+  margin: 0 0 2px 9px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}
+
+.year {
+  color: #ffffff;
+  margin-left: 9px;
+}
+
+.team-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.team-1 a {
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.tokner {
+  display: flex;
+  gap: 39px;
+  margin: 0 173px 300px;
+}
+
+.presale-detail {
+  background-image: url(../image/Group\ 37.png);
+  position: relative;
+  margin-bottom: 220px;
+}
+
+.presale-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../image/Group\ 17.png);
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  padding: 95px 95px 87px;
+  border-radius: 20px;
+}
+
+.detail-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../image/Group\ 20.png);
+  background-repeat: no-repeat;
+  padding: 110px 95px 87px;
+  border-radius: 20px;
+  margin-top: 80px;
+}
+
+.detail-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../image/Group\ 41.png);
+  background-repeat: no-repeat;
+  padding: 110px 95px 87px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.go-btn {
+  display: flex;
+  align-items: center;
+}
+
+/* margin styles start here */
+
+.team > span {
+  margin-right: 12px;
+}
+
+.mr-0 {
+  margin-right: 10px;
+}
+
+.mr-1 {
+  margin-right: 20px;
+}
+
+.mr-2 {
+  margin-right: 33px;
+}
+
+.mr-3 {
+  margin-right: 61px;
+}
+
+.mr-4 {
+  margin-right: 73px;
+}
+
+.mr-5 {
+  margin-right: 66px;
+}
+
+.ml-0 {
+  margin-left: 173px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.mb-0 {
+  margin-bottom: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 68px;
+}
+
+.mb-1b {
+  margin-bottom: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 120px;
+}
+
+.mb-3 {
+  margin-bottom: 45px;
+}
+
+.mb-3b {
+  margin-bottom: 49px;
+}
+
+.mb-5 {
+  margin-bottom: 317px;
+}
+
+.mb-6 {
+  margin-bottom: 30px;
+}
+
+.mg-1 {
+  margin: 0 132px 99px;
+}
+
+.mg-2b {
+  margin-inline: 173px;
+}
+
+/* margin style ends here */
+
+/* footer design start here */
+
+.border {
+  border: 2px solid #e5e5e5;
+}
+
+.facebook,
+.twitter,
+.medium,
+.reddit,
+.github,
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 15px 15px;
+}
+
+.how {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-buy-1 {
+  background: #171b29;
+  border-radius: 25px;
+  padding: 30px 30px;
+  margin-right: 20px;
+}
+
+.card-buy-2 {
+  background: #171b29;
+  border-radius: 25px;
+  padding: 30px 30px;
+  top: 150px;
+  margin-top: 80px;
+}
+
+.card-buy-3 {
+  background: #171b29;
+  border-radius: 25px;
+  padding: 30px 30px;
+  margin-left: 20px;
+}
+
+.greenarrow {
+  width: 60px;
+  height: 60px;
+  background: #0f1320;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  right: 63%;
+}
+
+.yellowarrow {
+  width: 60px;
+  height: 60px;
+  background: #0f1320;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  right: 31%;
+}
+
+.mobile {
+  display: none;
+}
+
+.pd-1 {
+  padding: 0px 73px 104px 117px;
+}
+
+.footer {
+  background-image: url(../image/Ресурс\ 1@4x\ 2.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 169px;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.logo {
+  margin-right: 24px;
+}
+
+#logo {
+  margin-right: 4px;
+}
+
+/* X-Small devices (portrait
+, less than 576px)  */
+@media (min-width: 320px) and (max-width: 576px) {
+  .xl-sc {
+    display: none;
+  }
+
+  .mobile-sc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 55px 20px;
+  }
+
+  /* xl-text family and text-design start here */
+
+  .xl-text {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .xl-text-1 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* or 111% */
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+
+  .xl-text-2 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+    color: #dde2ff;
+    opacity: 0.6;
+  }
+
+  .xl-text-3 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 111% */
+    color: #0f1320;
+    margin-bottom: 30px;
+  }
+
+  .xl-text-4 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    color: #0f1320;
+    opacity: 0.6;
+  }
+
+  .xl-text-5 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    color: #0f1320;
+    opacity: 0.6;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-text {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    /* or 189% */
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  .team-text-1 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* or 189% */
+    color: #ffffff;
+    opacity: 0.7;
+  }
+
+  .team-1 {
+    display: none;
+  }
+
+  .how {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-buy-1 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .card-buy-2 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    top: 150px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .card-buy-3 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    margin-left: 0px;
+  }
+
+  .greenarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 44%;
+    top: 28%;
+    transform: rotate(90deg);
+  }
+
+  .yellowarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 44%;
+    top: 62%;
+    transform: rotate(90deg);
+  }
+
+  .tokner {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 70px;
+    margin: 0 10px 42px;
+  }
+
+  .presale-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .detail-1,
+  .detail-3 {
+    display: none;
+  }
+
+  /* button outline removal */
+
+  .btn-outline {
+    border: 0px;
+    border-radius: 52px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border-bottom: 1px dashed #22a75d;
+    border-radius: 5px;
+  }
+
+  /* text ends here */
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .buy {
+    margin-bottom: 69px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  #hand {
+    width: 100%;
+  }
+
+  .image {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .text-color-xl {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 54px;
+    color: #ffffff;
+  }
+
+  .text-white {
+    color: #ffffff;
+  }
+
+  .text-green {
+    color: #22a75d;
+  }
+
+  .text-red {
+    color: #e20613;
+  }
+
+  .text-yellow {
+    color: #ffd100;
+  }
+
+  .text-blue {
+    color: #2278d4;
+  }
+
+  .white-text {
+    padding: 20px;
+  }
+
+  .xl-text-6 {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #f7f5f9;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* text-family ends here */
+
+  .white {
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding-right: 20%;
+    border-top-right-radius: 400px;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-left: 0%;
+    border-top-left-radius: 0px;
+  }
+
+  .share {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .white-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+  }
+
+  .goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  /* margin & padding styles start here */
+
+  .py {
+    padding-bottom: 10px;
+  }
+
+  .py-0 {
+    padding-bottom: 20px;
+  }
+
+  .py-1 {
+    padding-bottom: 30px;
+  }
+
+  .py-2 {
+    padding-bottom: 40px;
+  }
+
+  .pd-1 {
+    padding: 0px 5px 30px 24px;
+  }
+
+  .mg-1 {
+    margin: 0px;
+  }
+
+  .mg-2 {
+    margin-inline: 20px;
+  }
+
+  .mg-0 {
+    margin: 0px;
+  }
+
+  .mr-0 {
+    margin-right: 9.6px;
+  }
+
+  .mr-1 {
+    margin-right: 0px;
+  }
+
+  .mr-2 {
+    margin-right: 0px;
+  }
+
+  .mr-3 {
+    margin-right: 0px;
+  }
+
+  .mb {
+    margin-bottom: 10px;
+  }
+
+  .mb-1b {
+    margin-bottom: 20px;
+  }
+
+  .mb-1 {
+    margin-bottom: 20px;
+  }
+
+  .mb-2 {
+    margin-bottom: 70px;
+  }
+
+  .mb-3 {
+    margin-bottom: 40px;
+  }
+
+  .mb-4 {
+    margin-bottom: 33px;
+  }
+
+  .mb-4b {
+    margin-bottom: 32px;
+  }
+
+  /* margin & padding styles end here */
+
+  .card-1 {
+    top: 0px;
+  }
+
+  /* footer start here */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px;
+  }
+
+  .text-footer {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .facebook,
+  .twitter,
+  .medium,
+  .reddit,
+  .github,
+  .instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 7px 7px;
+  }
+
+  .justify-end {
+    justify-content: center;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)  */
+@media (min-width: 576px) and (max-width: 992px) {
+  .xl-sc {
+    display: none;
+  }
+
+  .mobile-sc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tokner {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 70px;
+    margin: 0 0 42px;
+  }
+
+  .team-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  .xl-text {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .text-white {
+    color: #ffffff;
+  }
+
+  .text-green {
+    color: #22a75d;
+  }
+
+  .text-blue {
+    color: #2278d4;
+  }
+
+  .white-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail-1,
+  .detail-3 {
+    display: none;
+  }
+
+  /* padding & margin start here */
+
+  body {
+    padding: 10px;
+  }
+
+  .pd-1 {
+    padding: 0px 5px 30px 24px;
+  }
+
+  .py {
+    padding-bottom: 9px;
+  }
+
+  .py-0 {
+    padding-bottom: 31px;
+  }
+
+  .py-1 {
+    padding-bottom: 40px;
+  }
+
+  .mr-4 {
+    margin-right: 25px;
+  }
+
+  .mg-0 {
+    margin: 40px 0 132px;
+  }
+
+  .mg-1 {
+    margin: 0 73px 8px;
+  }
+
+  .mb-3 {
+    margin-bottom: 40px;
+  }
+
+  .mb-4 {
+    margin-bottom: 33px;
+  }
+
+  .mb-4b {
+    margin-bottom: 32px;
+  }
+
+  /* padding & margin end here */
+
+  .how {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-buy-1 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    margin-right: 20px;
+  }
+
+  .card-buy-2 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    top: 150px;
+    margin-top: 80px;
+  }
+
+  .card-buy-3 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    margin-left: 20px;
+  }
+
+  .greenarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 62%;
+  }
+
+  .yellowarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 29%;
+  }
+
+  #hand {
+    width: 100%;
+  }
+
+  .goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 33px 158px;
+  }
+
+  /* footer design start here */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  /* footer design ends here */
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .mg-0 {
+    margin: 40px 0 132px;
+  }
+
+  .team-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  .mobile-sc {
+    display: none;
+  }
+
+  .xl-text {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .white-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .text-green {
+    color: #22a75d;
+  }
+
+  .text-blue {
+    color: #2278d4;
+  }
+
+  /* padding & margin design start here */
+  .py {
+    padding-bottom: 9px;
+  }
+
+  .py-0 {
+    padding-bottom: 31px;
+  }
+
+  .py-1 {
+    padding-bottom: 40px;
+  }
+
+  /* padding & margin design ends here */
+
+  .how {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-buy-1 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    margin-right: 20px;
+  }
+
+  .card-buy-2 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    top: 150px;
+    margin-top: 80px;
+  }
+
+  .card-buy-3 {
+    background: #171b29;
+    border-radius: 25px;
+    padding: 30px 30px;
+    margin-left: 20px;
+  }
+
+  .greenarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 64%;
+  }
+
+  .yellowarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 31%;
+  }
+
+  .white {
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding-left: 20%;
+    border-top-left-radius: 400px;
+    padding-top: 20%;
+    padding-bottom: 15%;
+  }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1399.98px) {
+  .mg-0 {
+    margin: 40px 0 132px;
+  }
+
+  .white {
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding-left: 20%;
+    border-top-left-radius: 400px;
+    padding-top: 20%;
+    padding-bottom: 15%;
+  }
+
+  .mobile-sc {
+    display: none;
+  }
+  .xl-text {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .text-green {
+    color: #22a75d;
+  }
+
+  .text-blue {
+    color: #2278d4;
+  }
+
+  .py {
+    padding-bottom: 9px;
+  }
+
+  .py-0 {
+    padding-bottom: 31px;
+  }
+
+  .py-1 {
+    padding-bottom: 40px;
+  }
+
+  .yellowarrow {
+    width: 60px;
+    height: 60px;
+    background: #0f1320;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    right: 31%;
+  }
+}
